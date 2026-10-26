@@ -20,3 +20,8 @@ tablica[tablica.length] = "Spaghetti" // przez długość
 console.log(tablica.length)
 
 tablica.push("Pączek, Kapuśniak, Gulasz, Mielone") // metodą push
+
+tablica[20] = 'daleko';
+console.log(tablica.length)
+console.log(tablica[15])
+// widać 'undefined', wypisana długość: 21
