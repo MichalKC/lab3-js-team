@@ -135,7 +135,14 @@
 
 				<div id="skrypty">
 					<h3>Zadanie 1 – ładowanie skryptów</h3>
-					<!-- Osoba A: kod zadania 1 -->
+					<script src="js/imie.js" defer></script>
+					<script src="js/powitanie.js" defer></script>
+					<p>Bez atrybutu skrypty wykonują się po kolei podczas 
+						ładowania strony. defer wykonuje je po 
+						wczytaniu HTML, a async od razu po załadowaniu 
+						pliku, więc kolejność może się zmieniać. document.write 
+						nie powinno być używane z defer i async, ponieważ może 
+						nadpisać zawartość strony.</p>
 				</div>
 				<div id="tablice">
 					<h3>Zadania 2 i 3 – tablice</h3>
