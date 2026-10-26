@@ -23,5 +23,13 @@ tablica.push("Pączek, Kapuśniak, Gulasz, Mielone") // metodą push
 
 tablica[20] = 'daleko';
 console.log(tablica.length)
-console.log(tablica[15])
 // widać 'undefined', wypisana długość: 21
+
+const nowaDlugosc = tablica.unshift("Zupa owocowa, Carbonara");
+console.log(nowaDlugosc);
+
+document.write('<p>Tablica: ' + tablica.join(', '));
+document.write(' (elementów: ' + tablica.length + ')</p>');
+
+document.write('<p>Czy tablica zawiera element "Pomidorowa"?<p>')
+document.write('<p> Zawiera: ' + tablica.includes("Pomidorowa") + ' gdzie: ' + tablica.indexOf("Pomidorowa")
