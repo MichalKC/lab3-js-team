@@ -32,4 +32,4 @@ document.write('<p>Tablica: ' + tablica.join(', '));
 document.write(' (elementów: ' + tablica.length + ')</p>');
 
 document.write('<p>Czy tablica zawiera element "Pomidorowa"?<p>')
-document.write('<p> Zawiera: ' + tablica.includes("Pomidorowa") + ' gdzie: ' + tablica.indexOf("Pomidorowa")
+document.write('<p> Zawiera: ' + tablica.includes("Pomidorowa") + ' gdzie: ' + tablica.indexOf("Pomidorowa"))
