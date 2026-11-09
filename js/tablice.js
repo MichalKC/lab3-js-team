@@ -33,3 +33,35 @@ document.write(' (elementów: ' + tablica.length + ')</p>');
 
 document.write('<p>Czy tablica zawiera element "Pomidorowa"?<p>')
 document.write('<p> Zawiera: ' + tablica.includes("Pomidorowa") + ' gdzie: ' + tablica.indexOf("Pomidorowa"))
+
+const nowaTablica = [
+    "Science Fiction",
+    "Horror",
+    "Romans",
+    "Polityka",
+    "Bajka"
+]
+
+document.write('<p>Pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+document.write('<p>Ostatni element to <strong>');
+document.write(nowaTablica[nowaTablica.length - 1] + '</strong></p>');
+
+nowaTablica.unshift("Komedia");
+document.write('<p>Po dodaniu: <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+
+let usunietyA = nowaTablica.pop();
+let usunietyB = nowaTablica.shift();
+document.write("<p>Usunięto z końca (pop): <b>" + usunietyA + "</b></p>");
+document.write("<p>Usunięto z początku (shift): <b>" + usunietyB + "</b></p>");
+document.write('<p>Tablica: ' + nowaTablica.join(', '));
+
+const oceny = [
+['JavaScript', 5],
+['Git', 4],
+['HTML', 5]
+];
+console.log(oceny[1]); // ['Git', 4]
+console.log(oceny[1][0]); // 'Git' – pierwszy indeks: który wiersz,
+console.log(oceny[1][1]); // 4
