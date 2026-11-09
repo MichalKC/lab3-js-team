@@ -1,6 +1,6 @@
 const zespol = [
 ['Cichocki', 'Michał', '2', '21436@student.ans-elblag.pl', '21436'], // Osoba A
-['???', '???', '?', '???', '???'] // Osoba B
+['Gutowska', 'Marta', '2', '21483@student.ans-elblag.pl', '21483'] // Osoba B
 ];
 const pola = ['nazwisko', 'imie', 'grupa', 'email', 'indeks'];
 for (let i = 0; i < pola.length; i++) {
