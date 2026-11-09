@@ -15,6 +15,8 @@ function startQuiz() {
             alert('Błąd. Prawidłowa odpowiedź to ' + question[1]);
         }
     }
+    const wynikElement = document.getElementById('wynik');
+    wynikElement.textContent = 'Twój wynik: ' + score + '/' + questions.length;
 }
 
 const questions = [
