@@ -45,5 +45,12 @@ const nowaTablica = [
 document.write('<p>Pierwszy element to <strong>');
 document.write(nowaTablica[0] + '</strong></p>');
 document.write(nowaTablica.length - 1 + '</strong></p>');
+
 nowaTablica.unshift("Komedia");
 document.write(nowaTablica[0] + '</strong></p>');
+
+let usunietyA = nowaTablica.pop();
+let usunietyB = nowaTablica.shift();
+document.write("<p>Usunięto z końca (pop): <b>" + usunietyZKonca + "</b></p>");
+document.write("<p>Usunięto z początku (shift): <b>" + usunietyZPoczatku + "</b></p>");
+document.write('<p>Tablica: ' + tablica.join(', '));
