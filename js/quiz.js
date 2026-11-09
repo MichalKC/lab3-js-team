@@ -6,13 +6,14 @@ startQuizButton.addEventListener('click', function() {
 
 function startQuiz() {
     let score = 0;
-    const question = questions[0];
-    const answer = prompt(question[0], '');
-    if (Number(answer) === question[1]) {
-        alert('Prawidłowa odpowiedź!');
-        score++;
-    } else {
-        alert('Błąd. Prawidłowa odpowiedź to ' + question[1]);
+    for (const question of questions) {
+        const answer = prompt(question[0], '');
+        if (Number(answer) === question[1]) {
+            alert('Prawidłowa odpowiedź!');
+            score++;
+        } else {
+            alert('Błąd. Prawidłowa odpowiedź to ' + question[1]);
+        }
     }
 }
 
