@@ -27,3 +27,31 @@ for (let i = srodek; i < tablica.length; i++) {
     tekstFor += tablica[i] + (i < tablica.length - 1 ? ", " : "");
 }
 document.getElementById("for").textContent = tekstFor;
+
+function policzZnaki(tekst) {
+    return tekst.length;
+}
+
+const elementyZDlugoscia = [];
+for (const element of nowaTablica) {
+    elementyZDlugoscia.push(element + " (" + policzZnaki(element) + ")");
+}
+document.getElementById("znaki").textContent = elementyZDlugoscia.join(", ");
+
+function pokazDane() {
+    const nazwisko = document.getElementById("nazwisko").textContent;
+    const imie = document.getElementById("imie").textContent;
+    const grupa = document.getElementById("grupa").textContent;
+    const email = document.getElementById("email").textContent;
+    const indeks = document.getElementById("indeks").textContent;
+
+    alert(
+        "Nazwisko: " + nazwisko +
+        "\nImię: " + imie +
+        "\nGrupa: " + grupa +
+        "\nEmail: " + email +
+        "\nNr indeksu: " + indeks
+    );
+}
+
+document.getElementById('pokazDane').addEventListener('click', pokazDane);
