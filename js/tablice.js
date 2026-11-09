@@ -44,16 +44,18 @@ const nowaTablica = [
 
 document.write('<p>Pierwszy element to <strong>');
 document.write(nowaTablica[0] + '</strong></p>');
-document.write((nowaTablica.length - 1) + '</strong></p>');
+document.write('<p>Ostatni element to <strong>');
+document.write(nowaTablica[nowaTablica.length - 1] + '</strong></p>');
 
 nowaTablica.unshift("Komedia");
+document.write('<p>Po dodaniu: <strong>');
 document.write(nowaTablica[0] + '</strong></p>');
 
 let usunietyA = nowaTablica.pop();
 let usunietyB = nowaTablica.shift();
-document.write("<p>Usunięto z końca (pop): <b>" + usunietyZKonca + "</b></p>");
-document.write("<p>Usunięto z początku (shift): <b>" + usunietyZPoczatku + "</b></p>");
-document.write('<p>Tablica: ' + tablica.join(', '));
+document.write("<p>Usunięto z końca (pop): <b>" + usunietyA + "</b></p>");
+document.write("<p>Usunięto z początku (shift): <b>" + usunietyB + "</b></p>");
+document.write('<p>Tablica: ' + nowaTablica.join(', '));
 
 const oceny = [
 ['JavaScript', 5],
