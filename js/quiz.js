@@ -5,5 +5,19 @@ startQuizButton.addEventListener('click', function() {
 });
 
 function startQuiz() {
-    alert("Quiz startuje")
+    let score = 0;
+    const question = questions[0];
+    const answer = prompt(question[0], '');
+    if (Number(answer) === question[1]) {
+        alert('Prawidłowa odpowiedź!');
+        score++;
+    } else {
+        alert('Błąd. Prawidłowa odpowiedź to ' + question[1]);
+    }
 }
+
+const questions = [
+['Ile księżyców ma Ziemia?', 1],
+['Ile księżyców ma Mars?', 2],
+['Ile księżyców ma Wenus?', 0]
+];
